@@ -1,0 +1,23 @@
+<h2>Skills</h2>
+<div class="container">
+  <div class="row">
+    <div
+      *ngFor="let item of getCurrentIndices() | keyvalue"
+      id="{{ item.key }}"
+      class="col-lg-4"
+    >
+      <div class="card">
+        <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
+        <div class="card-body">
+          <h5 class="card-title">{{ getCategory(item.value) }}</h5>
+          <ul
+            *ngFor="let catSkill of getCategorySkills(item.value)"
+            class="card-text"
+          >
+            <li>{{ catSkill }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

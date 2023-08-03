@@ -1,0 +1,21 @@
+.home {
+  height: 100vh;
+  background-color: black;
+  background-image: url("../../assets/images/homebg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h6 {
+  padding-bottom: 5%;
+}
+.intro {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
